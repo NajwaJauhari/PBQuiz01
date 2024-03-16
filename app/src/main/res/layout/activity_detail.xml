@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewMemberType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipe member :"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaksi Anda Hari ini"
+        android:layout_below="@id/textViewMemberType"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewProductCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode Barang :"
+        android:layout_below="@id/textViewTransaction"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Barang :"
+        android:layout_below="@id/textViewProductCode"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Barang :"
+        android:layout_below="@id/textViewProductName"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Harga :"
+        android:layout_below="@id/textViewProductPrice"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewDiscountPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discount Harga :"
+        android:layout_below="@id/textViewTotalPrice"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewDiscountMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discount Member :"
+        android:layout_below="@id/textViewDiscountPrice"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTotalPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Bayar :"
+        android:layout_below="@id/textViewDiscountMember"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewThankYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terimakasih Telah berbelanja disini!"
+        android:layout_below="@id/textViewTotalPay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_below="@id/textViewThankYou"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
