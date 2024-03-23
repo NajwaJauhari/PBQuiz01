@@ -11,22 +11,29 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"/>
 
-    <EditText
-        android:id="@+id/editTextCustomerName"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCustomerName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama Pelanggan"
+        android:hint="@string/customers_name"
         android:layout_below="@id/textViewTitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:inputType="text"/>
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textViewMemberTypeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tipe Member"
-        android:layout_below="@id/editTextCustomerName"
+        android:text="@string/member"
+        android:layout_below="@id/textInputLayoutCustomerName"
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"/>
@@ -45,47 +52,61 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Gold" />
+            android:text="@string/gold" />
 
         <RadioButton
             android:id="@+id/radioButtonSilver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Silver" />
+            android:text="@string/silver" />
 
         <RadioButton
             android:id="@+id/radioButtonRegular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Biasa" />
+            android:text="@string/ordinary" />
     </RadioGroup>
 
-    <EditText
-        android:id="@+id/TextProductName"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutProductName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Kode Barang"
+        android:hint="@string/item"
         android:layout_below="@id/radioGroupMember"
-        android:layout_marginTop="16dp"
-        android:inputType="text"/>
+        android:layout_marginTop="16dp">
 
-    <EditText
-        android:id="@+id/TextQuantity"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutQuantity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Jumlah Barang"
-        android:layout_below="@id/TextProductName"
-        android:layout_marginTop="16dp"
-        android:inputType="numberSigned"/>
+        android:hint="@string/quantity"
+        android:layout_below="@id/textInputLayoutProductName"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/buttonProcess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proses"
-        android:layout_below="@id/TextQuantity"
+        android:text="@string/process"
+        android:layout_below="@id/textInputLayoutQuantity"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"/>
 

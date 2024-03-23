@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Najwa Jauhari Quiz 01</string>
+    <string name="welcome">Selamat Datang!</string>
+    <string name="member_type">Tipe Member :</string>
+    <string name="your_transactions_today">"Transaksi Anda Hari ini "</string>
+    <string name="item_code">Kode Barang :</string>
+    <string name="object_name">Nama Barang :</string>
+    <string name="price">"Harga Barang : "</string>
+    <string name="total_price">"Total Harga : "</string>
+    <string name="price_discount">"Diskon Harga : "</string>
+    <string name="member_discount">"Diskon Member : "</string>
+    <string name="total_payment">Total Pembayaran:</string>
+    <string name="Thank_you_for_shopping_here">"Terimakasih Telah berbelanja disini! "</string>
+    <string name="share">Berbagi</string>
+    <string name="customers_name">"Nama Pelanggan "</string>
+    <string name="member">"Tipe Member "</string>
+    <string name="gold">Emas</string>
+    <string name="silver">Perak</string>
+    <string name="ordinary">Biasa</string>
+    <string name="item">"Kode Barang "</string>
+    <string name="quantity">"Jumlah Barang "</string>
+    <string name="process">Proses</string>
+</resources>
