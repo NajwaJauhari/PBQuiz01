@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">Najwa Jauhari Quiz 01</string>
-    <string name="welcome">Welcome</string>
-    <string name="member_type">Member type :</string>
+    <string name="welcome">Welcome %s!</string>
+    <string name="member_type">Member type : %s</string>
     <string name="your_transactions_today">Your Transactions Today</string>
-    <string name="item_code">Item code :</string>
-    <string name="object_name">Object name :</string>
-    <string name="price">Price :</string>
-    <string name="total_price">Total Price :</string>
-    <string name="price_discount">Price Discount :</string>
-    <string name="member_discount">Discount Member :</string>
-    <string name="total_payment">Total Payment :</string>
+    <string name="item_code">Item code : %s</string>
+    <string name="product_name">Product name : %s</string>
+    <string name="price">Price : %s</string>
+    <string name="total_price">Total Price : %s</string>
+    <string name="price_discount">Price Discount : %s</string>
+    <string name="member_discount">Discount Member : %s</string>
+    <string name="total_payment">Total Payment : %s</string>
     <string name="Thank_you_for_shopping_here">Thank you for shopping here!</string>
     <string name="share">Share</string>
     <string name="customers_name">Customer\'s name</string>

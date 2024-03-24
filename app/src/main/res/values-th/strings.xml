@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Najwa Jauhari Quiz 01</string>
-    <string name="welcome">ยินดีต้อนรับ</string>
-    <string name="member_type">ประเภทสมาชิก :</string>
+    <string name="welcome">ยินดีต้อนรับ %s!</string>
+    <string name="member_type">ประเภทสมาชิก : %s</string>
     <string name="your_transactions_today">ธุรกรรมของคุณวันนี้</string>
-    <string name="item_code">รหัสรายการ :</string>
-    <string name="object_name">ชื่ออ็อบเจ็กต์ :</string>ช
-    <string name="price">ราคา :</string>
-    <string name="total_price">ราคารวม :</string>
-    <string name="price_discount">ส่วนลดราคา :</string>
-    <string name="member_discount">สมาชิกส่วนลด :</string>
-    <string name="total_payment">ยอดชำระเงิน :</string>
+    <string name="item_code">รหัสรายการ : %s</string>
+    <string name="product_name">ชื่ออ็อบเจ็กต์ : %s</string>ช
+    <string name="price">ราคา : %s</string>
+    <string name="total_price">ราคารวม : %s</string>
+    <string name="price_discount">ส่วนลดราคา : %s</string>
+    <string name="member_discount">สมาชิกส่วนลด : %s</string>
+    <string name="total_payment">ยอดชำระเงิน : %s</string>
     <string name="Thank_you_for_shopping_here">ขอบคุณสำหรับการช็อปปิ้งที่นี่ !</string>
     <string name="share">แบ่งปัน</string>
     <string name="customers_name">ชื่อลูกค้า</string>

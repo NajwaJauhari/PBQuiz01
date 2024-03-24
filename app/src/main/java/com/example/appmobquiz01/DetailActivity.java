@@ -5,11 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
 import java.text.NumberFormat;
 import java.util.Locale;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 
 public class DetailActivity extends AppCompatActivity {
     TextView textViewWelcome, textViewMemberType,
@@ -37,41 +35,44 @@ public class DetailActivity extends AppCompatActivity {
         // Ambil data transaksi dari intent
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            String productName = extras.getString("productName");
-            int quantity = extras.getInt("quantity");
-            String memberType = extras.getString("memberType");
             String customerName = extras.getString("customerName");
+            String memberType = extras.getString("memberType");
+            String productName = extras.getString("productName");
 
-            // Tampilkan data transaksi pada TextView
-            textViewWelcome.setText("Selamat datang, " + customerName + "!");
-            textViewMemberType.setText("Tipe member : " + memberType);
-            textViewProductCode.setText("Kode Barang : " + productName);
-            textViewProductName.setText("Nama Barang : " + getProductName(productName));
+            // Periksa apakah data yang diperlukan ada
+            if (customerName != null && memberType != null && productName != null) {
+                // Tampilkan data transaksi pada TextView
+                textViewWelcome.setText(getString(R.string.welcome, customerName));
+                textViewMemberType.setText(getString(R.string.member_type, memberType));
+                textViewProductCode.setText(getString(R.string.item_code, productName));
+                textViewProductName.setText(getString(R.string.product_name, getProductName(productName)));
 
-            // Format harga dengan rupiah
-            int productPrice = getProductPrice(productName);
-            String formattedPrice = formatToRupiah(productPrice);
-            textViewProductPrice.setText("Harga : " + formattedPrice);
+                // Format harga dengan rupiah
+                int productPrice = getProductPrice(productName);
+                String formattedPrice = formatToRupiah(productPrice);
+                textViewProductPrice.setText(getString(R.string.price, formattedPrice));
 
-            // Hitung total harga dan format dengan rupiah
-            int totalPrice = productPrice * quantity;
-            String formattedTotalPrice = formatToRupiah(totalPrice);
-            textViewTotalPrice.setText("Total Harga : " + formattedTotalPrice);
+                // Hitung total harga dan format dengan rupiah
+                int quantity = extras.getInt("quantity");
+                int totalPrice = productPrice * quantity;
+                String formattedTotalPrice = formatToRupiah(totalPrice);
+                textViewTotalPrice.setText(getString(R.string.total_price, formattedTotalPrice));
 
-            // Hitung diskon harga dan format dengan rupiah
-            int discountPrice = calculateDiscountPrice(totalPrice);
-            String formattedDiscountPrice = formatToRupiah(discountPrice);
-            textViewDiscountPrice.setText("Diskon Harga : " + formattedDiscountPrice);
+                // Hitung diskon harga dan format dengan rupiah
+                int discountPrice = calculateDiscountPrice(totalPrice);
+                String formattedDiscountPrice = formatToRupiah(discountPrice);
+                textViewDiscountPrice.setText(getString(R.string.price_discount, formattedDiscountPrice));
 
-            // Hitung diskon member dan format dengan rupiah
-            int discountMember = calculateDiscountMember(totalPrice, memberType);
-            String formattedDiscountMember = formatToRupiah(discountMember);
-            textViewDiscountMember.setText("Diskon Member : " + formattedDiscountMember);
+                // Hitung diskon member dan format dengan rupiah
+                int discountMember = calculateDiscountMember(totalPrice, memberType);
+                String formattedDiscountMember = formatToRupiah(discountMember);
+                textViewDiscountMember.setText(getString(R.string.member_discount, formattedDiscountMember));
 
-            // Hitung total bayar dan format dengan rupiah
-            int totalPay = totalPrice - discountPrice - discountMember;
-            String formattedTotalPay = formatToRupiah(totalPay);
-            textViewTotalPay.setText("Total Bayar : " + formattedTotalPay);
+                // Hitung total bayar dan format dengan rupiah
+                int totalPay = totalPrice - discountPrice - discountMember;
+                String formattedTotalPay = formatToRupiah(totalPay);
+                textViewTotalPay.setText(getString(R.string.total_payment, formattedTotalPay));
+            }
         }
 
         // Set onClickListener untuk tombol Share

@@ -41,7 +41,7 @@
         android:id="@+id/textViewProductName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/object_name"
+        android:text="@string/product_name"
         android:layout_below="@id/textViewProductCode"
         android:layout_marginTop="16dp"/>
 

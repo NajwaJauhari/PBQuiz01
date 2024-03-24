@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Najwa Jauhari Quiz 01</string>
-    <string name="welcome">Maligayang pagdating!</string>
-    <string name="member_type">Uri ng miyembro :</string>
+    <string name="welcome">Maligayang pagdating %s!</string>
+    <string name="member_type">Uri ng miyembro : %s</string>
     <string name="your_transactions_today">Iyong Mga Transaksyon Ngayon</string>
-    <string name="item_code">Code ng Item :</string>
-    <string name="object_name">Pangalan ng item :</string>
-    <string name="price">Presyo :</string>
-    <string name="total_price">Kabuuang Presyo :</string>
-    <string name="price_discount">Diskwento sa Presyo :</string>
-    <string name="member_discount">Diskwento ng Miyembro :</string>
-    <string name="total_payment">Kabuuang Bayad :</string>
+    <string name="item_code">Code ng Item : %s</string>
+    <string name="product_name">Pangalan ng item : %s</string>
+    <string name="price">Presyo : %s</string>
+    <string name="total_price">Kabuuang Presyo : %s</string>
+    <string name="price_discount">Diskwento sa Presyo : %s</string>
+    <string name="member_discount">Diskwento ng Miyembro : %s</string>
+    <string name="total_payment">Kabuuang Bayad : %s</string>
     <string name="Thank_you_for_shopping_here">Salamat sa pamimili dito !</string>
     <string name="share">Ibahagi</string>
     <string name="customers_name">Pangalan ng customer</string>
